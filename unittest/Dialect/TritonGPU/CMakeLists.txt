@@ -51,3 +51,17 @@ add_triton_ut(
     LLVMSupport
     MLIRSupport
 )
+
+add_triton_ut(
+  NAME CoarseScheduleTest
+  SRCS CoarseScheduleTest.cpp
+  LIBS
+    TritonGPUIR
+    TritonGPUTransforms
+    TritonNvidiaGPUIR
+    TritonNvidiaGPUTransforms
+    MLIRArithDialect
+    MLIRSCFDialect
+    MLIRIR
+    MLIRSupport
+)
